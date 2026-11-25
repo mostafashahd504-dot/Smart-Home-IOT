@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartNest Home Systems </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  
+  <header class="sticky top-0 z-50 bg-white shadow-lg">
+    <nav class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <span class="text-2xl font-extrabold text-blue-600">SmartNest</span>
+        <span class="text-[11px] bg-blue-100 text-blue-600 px-2 py-0.5 rounded-md">Home Systems</span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+        <li><a href="#home" class="nav-link  hover:text-blue-600">Home</a></li>
+        <li><a href="#services" class="nav-link hover:text-blue-600">Services</a></li>
+        <li><a href="#work" class="nav-link  hover:text-blue-600">Our Work</a></li>
+        <li><a href="#team" class="nav-link   hover:text-blue-600">Our Team</a></li>
+        <li><a href="#contact" class="nav-link  hover:text-blue-600">Contact Us</a></li>
+      </ul>
+
+      <a href="#contact"
+         class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors">
+        Get a Consultation
+      </a>
+
+      <button id="menuBtn" class="md:hidden text-2xl text-gray-700" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 bg-white">
+      <ul class="flex flex-col px-6 py-4 gap-4 text-sm font-medium text-gray-700">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact" class="inline-block bg-blue-600 text-white px-5 py-2.5 rounded-md">Get a Consultation</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero-bg">
+      <div class="max-w-6xl mx-auto px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-extrabold leading-[1.1] text-slate-900">
+            Make Your <span class="text-blue-600"> Home Smarter</span> and Safer
+          </h1>
+
+          <p class="mt-6 text-lg text-gray-600 max-w-md leading-relaxed">
+           We design and install smart lighting, security cameras, and automation systems you control from your phone.
+          </p>
+
+          <ul class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> 10+ Years Experience</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> +500 Clients</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> Professional Team</li>
+          </ul>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#contact"
+               class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-7 py-3.5 rounded-md shadow-lg shadow-blue-600/20 transition-colors">
+              Get a Free Quote
+            </a>
+            <a href="#work"
+               class="bg-white border border-gray-200  hover:border-blue-600  hover:text-blue-600 text-gray-800 font-semibold px-6 py-3.5 rounded-md transition-colors">
+              <i class="fa-solid fa-play text-sm mr-2"></i>See How It Works
+            </a>
+          </div>
+        </div> 
+        <div class="relative">
+          <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-400 via-indigo-400 to-purple-400">
+            <span class="absolute top-6 right-8 w-14 h-14 rounded-full bg-white/25"></span>
+            <span class="absolute bottom-6 left-6 w-20 h-20 rounded-full bg-white/25"></span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="fa-solid fa-chart-line text-6xl text-white/50"></i>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-5 -left-4 bg-white rounded-xl shadow-xl px-4 py-3 flex items-center gap-3 floating-card">
+            <span class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center">
+              <i class="fa-solid fa-users"></i>
+            </span>
+            <div>
+              <p class="text-xs text-gray-500">Happy Home</p>
+              <p class="text-lg font-bold text-slate-900 leading-tight">+500</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section id="services" class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-slate-900">Our Smart Solutions</h2>
+          <p class="mt-3 text-gray-600">Everything you need to make your home easier</p>
+          <div class="mt-4 mx-auto w-16 h-1 bg-blue-600 rounded-full"></div>
+        </div>
+
+        <div class="mt-14 grid md:grid-cols-3 gap-6">
+
+          <article class="service-card service-blue   border rounded-lg hover:border-blue-600 hover:shadow-lg  hover:shadow-blue-500">
+            <div class="service-icon  rounded-lg  m-1 p-2 w-10 bg-blue-200 text-blue-800"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-slate-900 m-1">Search Engine Optimization</h3>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed m-1">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
+            <ul class="mt-4 space-y-1.5 text-sm text-gray-600 m-1">
+              <li><i class="fa-solid fa-check text-blue-500 mr-2 text-xs"></i>Keyword Analysis</li>
+              <li><i class="fa-solid fa-check text-blue-500 mr-2 text-xs"></i>Content Optimization</li>
+              <li><i class="fa-solid fa-check text-blue-500 mr-2 text-xs"></i>Link Building</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-purple  hover:shadow-lg  hover:shadow-purple-500  border rounded-lg hover:border-purple-600">
+            <div class="service-icon bg-purple-200 text-purple-800  rounded-lg  m-1 p-2 w-10"><i class="fa-brands fa-facebook-f"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-slate-900 m-1">Social Media Marketing</h3>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed m-1">We manage your advertising campaigns on Facebook and Instagram with high professionalism.</p>
+            <ul class="mt-4 space-y-1.5 text-sm text-gray-600 m-1">
+              <li><i class="fa-solid fa-check text-purple-500 mr-2 text-xs"></i>Precise Targeting</li>
+              <li><i class="fa-solid fa-check text-purple-500 mr-2 text-xs"></i>Results Analysis</li>
+              <li><i class="fa-solid fa-check text-purple-500 mr-2 text-xs"></i>Campaign Optimization</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-green  hover:shadow-lg  hover:shadow-green-500  border rounded-lg hover:border-green-600">
+            <div class="service-icon bg-green-200 text-green-800  rounded-lg m-1  p-2 w-10   "><i class="fa-solid fa-code"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-slate-900 m-1">Website Design &amp; Development</h3>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed m-1">We design professional websites that are compatible with all devices.</p>
+            <ul class="mt-4 space-y-1.5 text-sm text-gray-600 m-1">
+              <li><i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i>Responsive Design</li>
+              <li><i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i>High Speed</li>
+              <li><i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i>Easy Management</li>
+            </ul>
+          </article> 
+          </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="work" class="relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <span class="absolute -top-10 -left-10 w-48 h-48 rounded-full bg-white/10"></span>
+      <span class="absolute -bottom-16 -right-10 w-56 h-56 rounded-full bg-white/10"></span>
+
+      <div class="relative max-w-6xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div><p class="text-4xl font-bold">+500</p><p class="mt-1 text-sm text-blue-100">Clients Worldwide</p></div>
+        <div><p class="text-4xl font-bold">+1000</p><p class="mt-1 text-sm text-blue-100">Projects Completed</p></div>
+        <div><p class="text-4xl font-bold">+50</p><p class="mt-1 text-sm text-blue-100">Marketing Experts</p></div>
+        <div><p class="text-4xl font-bold">+10</p><p class="mt-1 text-sm text-blue-100">Years of Experience</p></div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="py-24 ">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-slate-900 ">Our Engineers Team</h2>
+          <p class="mt-3 text-gray-600">The team that designs, installs, and Supports your smart home</p>
+        </div>
+
+        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <article class="team-card border rounded-2xl shadow-lg shadow-gray-300 ">
+            <div class="team-photo w-[85%px]  relative  ">
+                <img src="images/photo_2026-11-25_15-57-29.jpg" alt="width=200px height=200px" class="rounded-t-2xl  w-[100%px] relative  ">
+             
+              <div class="team-icons  absolute t-0 l-0 r-0 b-0 bg-blue-600 hidden  ">
+                <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-slate-900">Ahmed Mohamed</h3>
+              <p class="text-sm text-blue-600">Systems Engineer</p>
+              <p class="mt-2 text-xs text-gray-500">Designs the full system for every project</p>
+            </div>
+          </article>
+
+          <article class="team-card border rounded-2xl shadow-lg shadow-gray-300">
+            <div class="team-photo  w-[85%px] relative mx-auto">
+                 <img  src="images/photo_2026-11-25_20-21-03.jpg" alt="width=200px height=200px "  class="rounded-t-2xl  w-[100%px]  ">
+              <div class="team-social hidden ">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter" ><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn" ><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-slate-900">Sara Ahmed</h3>
+              <p class="text-sm text-purple-600">IOT Specialist</p>
+              <p class="mt-2 text-xs text-gray-500">Specialized in search engine optimization</p>
+            </div>
+          </article>
+
+          <article class="team-card border rounded-2xl shadow-lg shadow-gray-300">
+            <div class="team-photo  w-[85%px] relative mx-auto">
+               <img src="images/photo_2026-11-25_15-57-26.jpg" alt="width=200px height=200px"  class="rounded-t-2xl  w-[100%px]   ">
+              <div class="team-social hidden ">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-slate-900">Mohamed Ali</h3>
+              <p class="text-sm text-green-600">Installation lead</p>
+              <p class="mt-2 text-xs text-gray-500">Leads the on-site installation teams</p>
+            </div>
+          </article> 
+          <article class="team-card border rounded-2xl shadow-lg shadow-gray-300">
+            <div class="team-photo  w-[85%px] relative mx-auto">
+               <img src="images/photo_2026-11-25_15-57-22.jpg" alt="width=200px height=200px"  class="rounded-t-2xl  w-[100%px]   " >
+              <div class="team-social hidden ">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="p-5 text-center">
+              <h3 class="font-bold text-slate-900">Noura Khaled</h3>
+              <p class="text-sm text-yellow-600">App Developer</p>
+              <p class="mt-2 text-xs text-gray-500">Builds the mobile app you control it with</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-slate-900 text-white py-20">
+      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-10">
+
+        <div class="bg-slate-800/70 rounded-2xl p-8">
+          <h2 class="text-xl font-bold">Contact Us</h2>
+
+          <form id="contactForm" class="mt-6 space-y-4">
+            <input type="text" placeholder="Full Name" required class="form-field w-full h-15 rounded-lg p-3 bg-slate-700  border-1   hover:border-blue-600 hover:border-2" />
+            <input type="email" placeholder="Email Address" required class="form-field  w-full h-15 rounded-lg p-3 bg-slate-700 border-1   hover:border-blue-600 hover:border-2" />
+            <textarea rows="4" placeholder="Your message..." required class="form-field resize-none  w-full h-35 rounded-lg p-3 bg-slate-700 border-1   hover:border-blue-600 hover:border-2"></textarea>
+            <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-3 rounded-md transition-colors">
+              Send Message
+            </button>
+            <p id="formMsg" class="hidden text-sm text-green-400 text-center">Thank you! Your message has been sent.</p>
+          </form>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold">Contact Information</h2>
+
+          <ul class="mt-6 space-y-5">
+            <li class="flex items-center gap-4">
+              <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div><p class="text-xs text-gray-400">Address</p><p class="text-sm font-semibold">Cairo, Egypt</p></div>
+            </li>
+            <li class="flex items-center gap-4">
+              <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+              <div><p class="text-xs text-gray-400">Phone</p><p class="text-sm font-semibold">+20 123 456 7890</p></div>
+            </li>
+            <li class="flex items-center gap-4">
+              <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div><p class="text-xs text-gray-400">Email</p><p class="text-sm font-semibold">info@smartNest.com</p></div>
+            </li>
+          </ul>
+
+          <div class="mt-8 h-40 rounded-xl bg-gradient-to-br from-blue-800 via-indigo-800 to-purple-800 flex items-center justify-center text-white/50">
+            <i class="fa-solid fa-map mr-2"></i> Site Map
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+      <p>&copy; 2026 SmartNest. All rights reserved.</p>
+      <div class="flex items-center gap-5 text-sm">
+        <a href="#" class="hover:text-white transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-white transition-colors" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer> 
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => mobileMenu.classList.add('hidden'))
+    );
+
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formMsg.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => formMsg.classList.add('hidden'), 4000);
+    });
+  </script>
+</body>
+</html>
